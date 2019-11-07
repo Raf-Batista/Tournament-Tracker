@@ -18,7 +18,7 @@ Hanami.configure do
     #    adapter :sql, 'postgresql://localhost/tournament_tracker_development'
     #    adapter :sql, 'mysql://localhost/tournament_tracker_development'
     #
-    adapter :sql, ENV.fetch('DATABASE_URL')
+    adapter :pg, ENV.fetch('DATABASE_URL')
 
     ##
     # Migrations
