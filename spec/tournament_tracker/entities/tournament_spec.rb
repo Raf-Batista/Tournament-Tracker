@@ -10,6 +10,7 @@ RSpec.describe Tournament, type: :entity do
     expect(tournament.date).to eq(date)
   end 
 
+  # might move this to repository specs
   it 'has an organizer' do 
     organizer_repository = OrganizerRepository.new
     organizer = organizer_repository.create(username: 'test_username', password_digest: 'test_password', email: 'test@email.com')
